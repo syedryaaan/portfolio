@@ -1,4 +1,4 @@
-# 🎨 ITom Dev | Interactive 3D WebGL Portfolio
+# 🎨 Syed Rayyan | Interactive 3D WebGL Portfolio
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" alt="React" />
@@ -10,7 +10,23 @@
 
 <br/>
 
-Welcome to the open-source repository of **Tomasz "ITom" Szmajda's** interactive 3D Web Developer portfolio. This project pushes the limits of modern web technologies by blending spatial WebGL computing, complex React ecosystems, and highly optimized frontend engineering.
+Syed Rayyan’s software engineering portfolio uses a hand-drawn 3D corridor to connect projects, education, contributions and contact details. The lightweight link page is available at `/start`.
+
+## Updating the portfolio
+
+| Content | File |
+| --- | --- |
+| Name, initials, headline, summary, contact details and profile URLs | `src/config/profile.js` |
+| Gallery projects, education, skills and leadership | `src/config/portfolioContent.js` |
+| Studio contributions | `src/components/canvas/rooms/Studio/contentData.js` |
+| Standalone link page, including its profile links | `public/start/index.html` |
+| Project card art | `public/textures/gallery/project-01.webp`, `project-02.webp`, `project-03.webp` and their `_painted.webp` counterparts |
+| Avatar art | `public/textures/entrance/avatar_window.webp`, `public/textures/corridor/avatar_sketch.webp`, and the frames in `public/textures/corridor/avatar_anim/` |
+| Résumé, social preview and favicon | `public/resume.pdf`, `public/og-image.webp` and `public/favico.png` |
+
+Copy the settings you need from `.env.example` to `.env`. Set `VITE_WEB3FORMS_KEY` to the public access key associated with the intended recipient. Direct email uses the address in the profile. Set `VITE_SITE_URL` to the published origin when building for production.
+
+Local content works without Sanity. To use a CMS, set `VITE_SANITY_PROJECT_ID` and `VITE_SANITY_DATASET` for the website. Use the corresponding `SANITY_STUDIO_PROJECT_ID` and `SANITY_STUDIO_DATASET` in the optional `sanity-studio` project.
 
 > [!NOTE]
 > Ensure hardware acceleration is enabled in your browser settings to experience the smooth 60 FPS high-tier rendering of this application.
@@ -54,11 +70,7 @@ graph TD;
 
 To run this application natively on your local machine:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ITomPoland/portfolio-itom.git
-   cd portfolio-itom
-   ```
+1. Open a terminal in this repository.
 
 2. **Install dependencies:**
    Make sure you are on Node.js v20+.
@@ -81,15 +93,16 @@ All PRs improving the shader physics, 3D math logic, or component memoization ru
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingRoom`)
 
+3. Commit your Changes (`git commit -m 'feat: Added realistic liquid simulation to Contact Room'`)
+4. Push to the Branch (`git push origin feature/AmazingRoom`)
+5. Open a Pull Request
+
 
 ## License
 
 The code in this repository is licensed under the [MIT License](LICENSE). 
 **Note:** All personal assets, 3D textures, images, and copywriting are copyright of Tomasz Szmajda and may not be reused or reproduced without explicit permission.
-3. Commit your Changes (`git commit -m 'feat: Added realistic liquid simulation to Contact Room'`)
-4. Push to the Branch (`git push origin feature/AmazingRoom`)
-5. Open a Pull Request
-
 ---
 
-*Designed and Developed by [Tomasz Szmajda (ITom Dev)](https://itomdev.com).*
+*Original portfolio design and development by [Tomasz Szmajda (ITom Dev)](https://itomdev.com).*
+# portfolio1
